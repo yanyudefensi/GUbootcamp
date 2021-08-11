@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/junjiexie/opt/anaconda3/bin/python",
+    "jupyter.jupyterServerType": "local",
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+}

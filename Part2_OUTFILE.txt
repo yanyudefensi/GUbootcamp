@@ -1,0 +1,68 @@
+	DateIssue	DateForecast	ReportingArea	StateCode	Latitude	Longitude	ParameterName	AQI	Category	ActionDay	Discussion
+0	2017-06-17 	2017-06-17 	Metropolitan Washington	DC	38.919	-77.013	O3	46	{'Number': 1, 'Name': 'Good'}	False	
+1	2017-06-17 	2017-06-17 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	50	{'Number': 1, 'Name': 'Good'}	False	
+2	2017-06-17 	2017-06-18 	Metropolitan Washington	DC	38.919	-77.013	O3	46	{'Number': 1, 'Name': 'Good'}	False	
+3	2017-06-17 	2017-06-18 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	50	{'Number': 1, 'Name': 'Good'}	False	
+4	2017-06-17 	2017-06-19 	Metropolitan Washington	DC	38.919	-77.013	O3	43	{'Number': 1, 'Name': 'Good'}	False	
+5	2017-06-17 	2017-06-19 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	42	{'Number': 1, 'Name': 'Good'}	False	
+6	2017-06-17 	2017-06-20 	Metropolitan Washington	DC	38.919	-77.013	O3	54	{'Number': 2, 'Name': 'Moderate'}	False	
+7	2017-06-17 	2017-06-20 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	29	{'Number': 1, 'Name': 'Good'}	False	
+
+
+now the zipCode is 20002
+-----------------------------
+
+	DateIssue	DateForecast	ReportingArea	StateCode	Latitude	Longitude	ParameterName	AQI	Category	ActionDay
+0	2017-06-16 	2017-06-17 	NW Coastal LA	CA	34.0505	-118.4566	O3	67	{'Number': 2, 'Name': 'Moderate'}	False
+1	2017-06-16 	2017-06-17 	NW Coastal LA	CA	34.0505	-118.4566	PM2.5	53	{'Number': 2, 'Name': 'Moderate'}	False
+2	2017-06-16 	2017-06-17 	NW Coastal LA	CA	34.0505	-118.4566	PM10	28	{'Number': 1, 'Name': 'Good'}	False
+3	2017-06-16 	2017-06-17 	NW Coastal LA	CA	34.0505	-118.4566	NO2	20	{'Number': 1, 'Name': 'Good'}	False
+4	2017-06-16 	2017-06-17 	NW Coastal LA	CA	34.0505	-118.4566	CO	15	{'Number': 1, 'Name': 'Good'}	False
+5	2017-06-17 	2017-06-18 	NW Coastal LA	CA	34.0505	-118.4566	O3	67	{'Number': 2, 'Name': 'Moderate'}	False
+6	2017-06-17 	2017-06-18 	NW Coastal LA	CA	34.0505	-118.4566	PM2.5	42	{'Number': 1, 'Name': 'Good'}	False
+7	2017-06-17 	2017-06-18 	NW Coastal LA	CA	34.0505	-118.4566	PM10	19	{'Number': 1, 'Name': 'Good'}	False
+8	2017-06-17 	2017-06-18 	NW Coastal LA	CA	34.0505	-118.4566	NO2	20	{'Number': 1, 'Name': 'Good'}	False
+9	2017-06-17 	2017-06-18 	NW Coastal LA	CA	34.0505	-118.4566	CO	15	{'Number': 1, 'Name': 'Good'}	False
+
+
+now the zipCode is 90210
+-----------------------------
+
+	DateIssue	DateForecast	ReportingArea	StateCode	Latitude	Longitude	ParameterName	AQI	Category	ActionDay	Discussion
+0	2017-06-17 	2017-06-17 	Denver-Boulder	CO	39.9003	-105.042	O3	-1	{'Number': 2, 'Name': 'Moderate'}	False	
+1	2017-06-17 	2017-06-17 	Denver-Boulder	CO	39.9003	-105.042	PM2.5	-1	{'Number': 2, 'Name': 'Moderate'}	False	
+2	2017-06-17 	2017-06-18 	Denver-Boulder	CO	39.9003	-105.042	O3	-1	{'Number': 3, 'Name': 'Unhealthy for Sensitive Groups'}	True	
+3	2017-06-17 	2017-06-18 	Denver-Boulder	CO	39.9003	-105.042	PM2.5	-1	{'Number': 2, 'Name': 'Moderate'}	False	
+
+
+now the zipCode is 80302
+-----------------------------
+
+	DateIssue	DateForecast	ReportingArea	StateCode	Latitude	Longitude	ParameterName	AQI	Category	ActionDay	Discussion
+0	2017-06-16 	2017-06-17 	Chicago	IL	41.964	-87.659	O3	-1	{'Number': 2, 'Name': 'Moderate'}	False	
+1	2017-06-16 	2017-06-17 	Chicago	IL	41.964	-87.659	PM2.5	-1	{'Number': 2, 'Name': 'Moderate'}	False	
+2	2017-06-16 	2017-06-18 	Chicago	IL	41.964	-87.659	O3	-1	{'Number': 1, 'Name': 'Good'}	False	
+3	2017-06-16 	2017-06-18 	Chicago	IL	41.964	-87.659	PM2.5	-1	{'Number': 1, 'Name': 'Good'}	False	
+4	2017-06-16 	2017-06-19 	Chicago	IL	41.964	-87.659	O3	-1	{'Number': 1, 'Name': 'Good'}	False	
+5	2017-06-16 	2017-06-19 	Chicago	IL	41.964	-87.659	PM2.5	-1	{'Number': 1, 'Name': 'Good'}	False	
+6	2017-06-16 	2017-06-20 	Chicago	IL	41.964	-87.659	O3	-1	{'Number': 1, 'Name': 'Good'}	False	
+7	2017-06-16 	2017-06-20 	Chicago	IL	41.964	-87.659	PM2.5	-1	{'Number': 1, 'Name': 'Good'}	False	
+
+
+now the zipCode is 60006
+-----------------------------
+
+	DateIssue	DateForecast	ReportingArea	StateCode	Latitude	Longitude	ParameterName	AQI	Category	ActionDay	Discussion
+0	2017-06-17 	2017-06-17 	Metropolitan Washington	DC	38.919	-77.013	O3	46	{'Number': 1, 'Name': 'Good'}	False	
+1	2017-06-17 	2017-06-17 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	50	{'Number': 1, 'Name': 'Good'}	False	
+2	2017-06-17 	2017-06-18 	Metropolitan Washington	DC	38.919	-77.013	O3	46	{'Number': 1, 'Name': 'Good'}	False	
+3	2017-06-17 	2017-06-18 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	50	{'Number': 1, 'Name': 'Good'}	False	
+4	2017-06-17 	2017-06-19 	Metropolitan Washington	DC	38.919	-77.013	O3	43	{'Number': 1, 'Name': 'Good'}	False	
+5	2017-06-17 	2017-06-19 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	42	{'Number': 1, 'Name': 'Good'}	False	
+6	2017-06-17 	2017-06-20 	Metropolitan Washington	DC	38.919	-77.013	O3	54	{'Number': 2, 'Name': 'Moderate'}	False	
+7	2017-06-17 	2017-06-20 	Metropolitan Washington	DC	38.919	-77.013	PM2.5	29	{'Number': 1, 'Name': 'Good'}	False	
+
+
+now the zipCode is 20002
+-----------------------------
+
