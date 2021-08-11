@@ -1,0 +1,194 @@
+clean data and check it
+
+  PassengerId Survived Pclass                                                Name    Sex Age SibSp Parch           Ticket    Fare Cabin Embarked
+1           1        0      3                             Braund, Mr. Owen Harris   male  22     1     0        A/5 21171  7.2500  <NA>        S
+2           2        1      1 Cumings, Mrs. John Bradley (Florence Briggs Thayer) female  38     1     0         PC 17599 71.2833   C85        C
+3           3        1      3                              Heikkinen, Miss. Laina female  26     0     0 STON/O2. 3101282  7.9250  <NA>        S
+4           4        1      1        Futrelle, Mrs. Jacques Heath (Lily May Peel) female  35     1     0           113803 53.1000  C123        S
+5           5        0      3                            Allen, Mr. William Henry   male  35     0     0           373450  8.0500  <NA>        S
+
+
+'data.frame':	891 obs. of  12 variables:
+ $ PassengerId: int  1 2 3 4 5 6 7 8 9 10 ...
+ $ Survived   : int  0 1 1 1 0 0 0 0 1 1 ...
+ $ Pclass     : int  3 1 3 1 3 3 1 3 3 2 ...
+ $ Name       : chr  "Braund, Mr. Owen Harris" "Cumings, Mrs. John Bradley (Florence Briggs Thayer)" "Heikkinen, Miss. Laina" "Futrelle, Mrs. Jacques Heath (Lily May Peel)" ...
+ $ Sex        : chr  "male" "female" "female" "female" ...
+ $ Age        : num  22 38 26 35 35 NA 54 2 27 14 ...
+ $ SibSp      : int  1 1 0 1 0 0 0 3 0 1 ...
+ $ Parch      : int  0 0 0 0 0 0 0 1 2 0 ...
+ $ Ticket     : chr  "A/5 21171" "PC 17599" "STON/O2. 3101282" "113803" ...
+ $ Fare       : num  7.25 71.28 7.92 53.1 8.05 ...
+ $ Cabin      : chr  NA "C85" NA "C123" ...
+ $ Embarked   : chr  "S" "C" "S" "S" ...
+NULL
+
+
+clean data Part1
+
+  Survived Pclass    Sex Age SibSp Parch  Fare Embarked
+1        0      3   male  22     1     0  7.25        S
+2        1      1 female  38     1     0 71.28        C
+3        1      3 female  26     0     0  7.92        S
+4        1      1 female  35     1     0 53.10        S
+5        0      3   male  35     0     0  8.05        S
+
+
+clean data Part2
+
+The Titanic dataset has a total of  891 rows.
+The Titanic dataset has a total of  8 columns.
+
+
+find the number of columns which are not Null
+
+[1] 712
+Aggregate FamilyNum
+
+
+EDA part1
+
+print table for each variable
+
+the col is Survived 
+
+
+  0   1 
+424 288 
+
+the col is Pclass 
+
+
+  1   2   3 
+184 173 355 
+
+the col is Sex 
+
+
+female   male 
+   259    453 
+
+the col is Age 
+
+
+0.42 0.67 0.75 0.83 0.92    1    2    3    4    5    6    7    8    9   10   11   12   13   14 14.5   15   16   17   18   19   20 20.5   21   22 
+   1    1    2    2    1    7   10    6   10    4    3    3    4    8    2    4    1    2    6    1    5   17   13   26   25   15    1   24   27 
+  23 23.5   24 24.5   25   26   27   28 28.5   29   30 30.5   31   32 32.5   33   34 34.5   35   36 36.5   37   38   39   40 40.5   41   42   43 
+  15    1   30    1   23   18   18   25    2   20   25    2   17   18    2   15   15    1   18   22    1    6   10   14   13    2    6   13    5 
+  44   45 45.5   46   47   48   49   50   51   52   53   54   55 55.5   56   57   58   59   60   61   62   63   64   65   66   70 70.5   71   74 
+   9   12    2    3    9    9    6   10    7    6    1    8    2    1    4    2    5    2    4    3    3    2    2    3    1    2    1    2    1 
+  80 
+   1 
+
+the col is Fare 
+
+
+     0   4.01      5   6.24   6.44   6.45    6.5   6.75   6.97   7.05   7.12   7.14   7.22   7.23   7.25    7.5   7.52   7.55   7.65   7.73 
+     7      1      1      1      1      1      2      2      2      9      4      1      6      8     10      3      1      2      4      2 
+  7.74   7.75   7.78    7.8   7.85   7.88   7.89    7.9   7.92   8.03   8.05   8.16    8.3   8.36    8.4   8.43   8.52   8.65   8.66   8.68 
+     1     14     14      7     13      2      1     23     18      1     29      1      1      1      1      1      1      1     12      1 
+  8.85      9   9.22   9.35   9.47   9.48    9.5   9.59   9.82   9.84   9.85  10.17  10.46   10.5  10.52  11.13  11.24   11.5     12  12.28 
+     1      2      3      2      1      1      8      2      2      2      1      1      2     24      1      3      2      4      1      1 
+ 12.29  12.35  12.47  12.53  12.65  12.88     13  13.42   13.5  13.79  13.86     14  14.11   14.4  14.45  14.46   14.5     15  15.05  15.25 
+     1      2      4      1      1      1     41      1      4      1      1      1      1      2      6      1      5      1      1      2 
+  15.5  15.55  15.74  15.75  15.85   15.9     16   16.1   16.7   17.4   17.8     18  18.75  18.79  19.26   19.5  20.21  20.25  20.52  20.58 
+     2      1      2      1      4      2      1      6      2      1      2      3      3      2      4      2      2      2      3      2 
+    21  21.08  22.02  22.52     23     24  24.15  25.59  25.93     26  26.25  26.28  26.29  26.39  26.55     27  27.72  27.75   27.9   28.5 
+     6      4      1      1      4      2      5      1      2     30      6      1      3      1     13      2      3      4      6      1 
+ 28.71     29  29.12   29.7     30  30.07   30.5   30.7     31  31.27  31.39  32.32   32.5     33   33.5  34.02  34.38  34.65   35.5  36.75 
+     1      2      5      2      5      2      4      1      2      7      4      1      1      2      1      1      4      1      3      2 
+    37   38.5     39   39.4   39.6  39.69  40.12  41.58   46.9   47.1   49.5   50.5  51.48  51.86     52  52.55   53.1     55  55.44   55.9 
+     2      1      4      1      1      6      1      3      6      1      3      1      1      1      5      3      5      1      1      2 
+  56.5  56.93     57  57.98   59.4  61.17  61.38  61.98  63.36     65   66.6   69.3     71  71.28   73.5  75.25  76.29  76.73  77.29  77.96 
+     4      2      2      2      1      1      1      1      1      2      2      2      2      1      5      1      1      3      2      3 
+ 78.27  78.85   79.2  79.65  81.86  82.17  83.16  83.47   86.5   89.1     90  91.08   93.5 106.42  108.9 110.88 113.28    120 133.65  134.5 
+     2      2      3      3      1      1      3      2      3      1      4      2      2      2      2      3      3      4      1      2 
+135.63 146.52 151.55 153.46 164.87 211.34  211.5 227.52 247.52 262.38    263 512.33 
+     3      1      4      3      2      3      1      3      2      2      4      3 
+
+the col is Embarked 
+
+
+  C   Q   S 
+130  28 554 
+
+the col is FamilyNum 
+
+
+  0   1   2   3   4   5   6   7 
+402 139  93  27  11  22  12   6 
+
+
+Summary of each col
+
+The mode of  Survived is	0 
+The mode of  Pclass is	3 
+The mode of  Sex is	male 
+The mode of  Age is	32 
+      Age       
+ Min.   : 0.42  
+ 1st Qu.:20.00  
+ Median :28.00  
+ Mean   :29.64  
+ 3rd Qu.:38.00  
+ Max.   :80.00  
+The mode of  Fare is	67 
+      Fare       
+ Min.   :  0.00  
+ 1st Qu.:  8.05  
+ Median : 15.64  
+ Mean   : 34.57  
+ 3rd Qu.: 33.00  
+ Max.   :512.33  
+The mode of  Embarked is	S 
+The mode of  FamilyNum is	0 
+
+
+t-test of Age and Sex
+
+
+	Welch Two Sample t-test
+
+data:  TitanicDF$Age by TitanicDF$Sex
+t = -2.6869, df = 558.65, p-value = 0.007426
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.1610078 -0.8019339
+sample estimates:
+mean in group female   mean in group male 
+            27.74517             30.72664 
+
+
+
+  Survived Pclass    Sex Age  Fare Embarked FamilyNum
+1        0      3   male  22  7.25        S         1
+2        1      1 female  38 71.28        C         1
+3        1      3 female  26  7.92        S         0
+4        1      1 female  35 53.10        S         1
+5        0      3   male  35  8.05        S         0
+7        0      1   male  54 51.86        S         0
+
+
+Feature Generation
+
+   Survived Pclass    Sex Age  Fare Embarked FamilyNum AgeBin
+1         0      3   male  22  7.25        S         1 middle
+2         1      1 female  38 71.28        C         1 middle
+3         1      3 female  26  7.92        S         0 middle
+4         1      1 female  35 53.10        S         1 middle
+5         0      3   male  35  8.05        S         0 middle
+7         0      1   male  54 51.86        S         0   Late
+8         0      3   male   2 21.08        S         4  Child
+9         1      3 female  27 11.13        S         2 middle
+10        1      2 female  14 30.07        C         1   Teen
+11        1      3 female   4 16.70        S         2  Child
+12        1      1 female  58 26.55        S         0   Late
+13        0      3   male  20  8.05        S         0 middle
+14        0      3   male  39 31.27        S         6 middle
+15        0      3 female  14  7.85        S         0   Teen
+16        1      2 female  55 16.00        S         0   Late
+17        0      3   male   2 29.12        Q         5  Child
+19        0      3 female  31 18.00        S         1 middle
+21        0      2   male  35 26.00        S         0 middle
+22        1      2   male  34 13.00        S         0 middle
+23        1      3 female  15  8.03        Q         0   Teen
